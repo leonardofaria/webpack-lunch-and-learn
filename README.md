@@ -45,3 +45,7 @@ Let's style the app - and use more code splitting.
 ## Step 11A: Add jQuery
 
 Let's add jQuery and some interaction.
+
+## Step 11B: Use external jQuery
+
+Adding jQuery increased our bundle. We can use `externals` to exclude a import from the bundle and then revert this situation.
