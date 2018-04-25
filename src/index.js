@@ -1,6 +1,10 @@
-import { uniq } from "lodash-es";
+import uniq from "./uniq";
 
-const uniqueValues = uniq([1, 3, 4, 4, 5, 6, 7]);
-console.log(uniqueValues);
+const button = document.createElement("button");
+button.innerText = "Show uniq elements";
 
-export default uniqueValues;
+document.body.appendChild(button);
+
+button.addEventListener("click", e => {
+  alert(uniq);
+});

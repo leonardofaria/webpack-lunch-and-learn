@@ -21,3 +21,7 @@ webpack-bundle-analyzer details what is inside your bundle
 ## Step 5: Add performance warnings
 
 It is possible to set warning and errors when you file reaches a specific size.
+
+## Step 6: Pre Code Splitting
+
+Let's add a button in the screen to show the unique elements of an array.
