@@ -29,3 +29,7 @@ Let's add a button in the screen to show the unique elements of an array.
 ## Step 7: Add Code Splitting
 
 We can assign an import to a variable and load the module on demand.
+
+## Step 8: Refactor Code Splitting
+
+A quick refactor to move the default export.
