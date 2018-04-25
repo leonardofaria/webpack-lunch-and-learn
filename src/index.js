@@ -1,4 +1,4 @@
-import uniq from "./uniq";
+const uniq = () => import("./uniq");
 
 const button = document.createElement("button");
 button.innerText = "Show uniq elements";
@@ -6,5 +6,7 @@ button.innerText = "Show uniq elements";
 document.body.appendChild(button);
 
 button.addEventListener("click", e => {
-  alert(uniq);
+  uniq().then(module => {
+    alert(module.default);
+  })
 });
