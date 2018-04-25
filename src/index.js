@@ -28,3 +28,22 @@ dateButton.addEventListener("click", e => {
     alert(addDays(today, 1));
   })
 });
+
+const select = document.createElement("div");
+select.innerHTML = `
+<select>
+  <option></option>
+  <option value="pink">Pink Theme</option>
+  <option value="yellow">Yellow Theme</option>
+</select>
+`;
+
+document.body.appendChild(select);
+
+const getTheme = (themeName) => import(`./themes/${themeName}`);
+
+select.firstElementChild.addEventListener('change', ({target: {value}}) => {
+  getTheme(value).then((themeModule) => {
+    themeModule.default();
+  })
+});

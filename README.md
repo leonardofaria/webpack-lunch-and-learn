@@ -37,3 +37,7 @@ A quick refactor to move the default export.
 ## Step 9: Add another Code Splitting example
 
 Let's add another example using the date-fns package.
+
+## Step 10: Add another Code Splitting example (themes)
+
+Let's style the app - and use more code splitting.
