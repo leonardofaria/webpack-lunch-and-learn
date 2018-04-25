@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 const uniq = () => import("./uniq").then(m => m.default); // Use the default export when the promise is resolved;
 
 const button = document.createElement("button");
@@ -46,4 +48,13 @@ select.firstElementChild.addEventListener('change', ({target: {value}}) => {
   getTheme(value).then((themeModule) => {
     themeModule.default();
   })
+});
+
+const hideSelectButton = document.createElement("button");
+hideSelectButton.innerText = "Hide select field";
+
+document.body.appendChild(hideSelectButton);
+
+hideSelectButton.addEventListener("click", e => {
+  $("select").hide();
 });

@@ -41,3 +41,7 @@ Let's add another example using the date-fns package.
 ## Step 10: Add another Code Splitting example (themes)
 
 Let's style the app - and use more code splitting.
+
+## Step 11A: Add jQuery
+
+Let's add jQuery and some interaction.
