@@ -10,3 +10,21 @@ button.addEventListener("click", e => {
     alert(module);
   })
 });
+
+const dateButton = document.createElement("button");
+dateButton.innerText = "When is tomorrow?";
+
+document.body.appendChild(dateButton);
+
+button.addEventListener("click", e => {
+  uniq().then(module => {
+    alert(module);
+  })
+});
+
+dateButton.addEventListener("click", e => {
+  import("date-fns").then(({ addDays }) => {
+    const today = new Date();
+    alert(addDays(today, 1));
+  })
+});

@@ -33,3 +33,7 @@ We can assign an import to a variable and load the module on demand.
 ## Step 8: Refactor Code Splitting
 
 A quick refactor to move the default export.
+
+## Step 9: Add another Code Splitting example
+
+Let's add another example using the date-fns package.
